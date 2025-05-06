@@ -24,7 +24,7 @@ model = YOLO('yolov8n.pt')
 
 if __name__ == '__main__':
     # Train the model
-    model.train(data='data.yaml', epochs=5, imgsz=2358)
+    model.train(data='data.yaml', epochs=52, imgsz=2358)
     model.val(data='data.yaml')
     model.save('best_model.pt')
     print('Model saved')
